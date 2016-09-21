@@ -160,7 +160,7 @@ function getXcodeArgs(projectName, projectPath, configuration, isDevice) {
             '-target', projectName ,
             '-configuration', configuration,
             '-sdk', 'iphonesimulator',
-            '-destination', 'platform=iOS Simulator',
+            '-destination', 'platform=iOS Simulator,name=iPhone 6',
             'build',
             'CONFIGURATION_BUILD_DIR=' + path.join(projectPath, 'build', 'emulator'),
             'SHARED_PRECOMPS_DIR=' + path.join(projectPath, 'build', 'sharedpch')
